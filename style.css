@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Public Sans, sans-serif;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+.header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu-btn {
+    border: none;
+    cursor: pointer;
+}
+
+.header .container .nav {
+    width: 40%;
+    display: none;
+}
+
+.Request-invite {
+    display: none;
+}
+
+@media screen and (min-width: 1220px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .header .container .nav .nav-list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        Font-size: 18px;
+    }
+
+    .list-item {
+        text-decoration: none;
+        color: hsl(233, 8%, 62%);
+        margin-bottom: 0px;
+    }
+
+    .list-item:hover {
+        color: black;
+        border-bottom: 3px solid hsl(136, 64%, 51%);
+    }
+
+    .header .container .nav {
+        display: block;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .Request-invite {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        background-image: linear-gradient(hsl(136, 64%, 51%),hsl(192, 69%, 51%));
+        color: white;
+        border-radius: 30px;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        Font-size: 18px;
+    }
+}
+
+.mockups {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    top: -70px;
+
+}
+
+.hero-img-part {
+    background-image: url(images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container-hero {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: hsl(233, 26%, 24%);
+}
+
+.h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    margin: auto;
+}
+
+.hero-text-part {
+    padding-bottom: 30px;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 20px;
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Request-invite-hero {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 150px;
+    background-color: hsl(136, 64%, 51%);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 1220px) {
+    .hero {
+        display: flex;
+        margin-bottom: 40px;
+        height: 100vh;
+        justify-content: space-between;
+        margin: auto;
+        gap: 0px;
+    }
+
+    .hero-text-part {
+        height: 100vh;
+        order: -1;
+        width: 48%;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+        padding-top: 200px;
+        margin-left: 10%;
+    }
+
+    .h1 {
+        text-align: left;
+        width: 100%;
+        font-size: 60px;
+        font-weight: 400;
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        width: 60%;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 25px;
+    }
+
+    .Request-invite-hero {
+        width: 200px;
+        background-color: hsl(136, 64%, 51%);
+        color: white;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 40px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 15px;
+        margin-top: 15px;
+        background-image: linear-gradient(hsl(136, 64%, 51%),hsl(192, 69%, 51%));
+    }
+
+    .hero-img-part {
+        width: 48%;
+        background-image: url(images/bg-intro-desktop.svg);
+        background-size: cover;
+        background-position: bottom left;
+        position: relative;
+        margin-bottom: 0px;
+        height: 100vh;
+    }
+
+    .hero-img-part img {
+        position: absolute;
+        top: 30px;
+        right: -150px;
+    }
+}
+
+.why-choose {
+    background-color: hsl(220, 16%, 96%);
+    padding: 50px 0;
+}
+
+.whychoose-h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.whychoose-text {
+    text-align: center;
+    padding: 20px;
+    color: hsl(233, 8%, 62%);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.whychoose-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: hsl(233, 8%, 62%);
+    text-align: center;
+}
+
+@media screen and (min-width: 1220px) {
+    .why-choose {
+        background-color: hsl(220, 16%, 96%);
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        text-align: left;
+        width: 100%;
+        gap: 30px;
+    }
+
+
+    .whychoose-h2 {
+        text-align: left;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 400;
+        margin-top: 5%;
+    }
+
+    .whychoose-text {
+        width: 100%;
+        text-align: left;
+        line-height: 1.5;
+        padding-top: 50px;
+        font-size: 20px;
+        font-weight: 300;
+        padding-left: 0px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px 0px;
+        margin-bottom: 3%;
+        width: 25%;
+    }
+
+    .card img {
+        margin-bottom: 0;
+        padding: 0;
+        margin-right: 30px; 
+        align-self: flex-start;
+        width: 80px; 
+        height: auto;
+    }
+
+
+    .card p {
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.5;
+        padding-top: 20px;
+    }
+
+    .card h3 {
+        text-align: left;
+        width: 100%;
+        font-size: 24px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+
+}
+
+.articles {
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.articles-h2 {
+    color: hsl(233, 26%, 24%);
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.articles-cards {
+    width: 90%;
+    margin: auto;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.article-card {
+    margin: 40px 0px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.article-img img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.article-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.by-who {
+    color: hsl(233, 8%, 62%);
+    font-size: 13px;
+    padding: 0px 0px 10px 0px;
+}
+
+.article-title {
+    color: hsl(233, 26%, 24%);
+    font-size: 18px;
+    padding: 0px 0px 10px 0px;
+}
+
+.article-description {
+    color: hsl(233, 8%, 62%);
+    font-size: 18px;
+    padding: 0px 0px 10px 0px;
+}
+
+.article-title:hover {
+    cursor: pointer;
+    color: hsl(136, 64%, 51%);
+}
+
+@media screen and (min-width: 1220px) {
+    .articles-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .article-card {
+        width: 100%;
+    }
+
+    .articles-h2 {
+        text-align: left;
+        margin-left: 10%;
+    }
+
+    .article-img {
+        width: 100%;
+    }
+
+    .article-title:hover {
+        cursor: pointer;
+        color: hsl(136, 64%, 51%);
+    }
+
+    .article-description {
+        font-size: 20px;
+    }
+
+    .article-title {
+        font-size: 24px;
+    }
+}
+
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    text-align: center;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+}
+
+.footer-logo {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.socila-links {
+    text-align: center;
+}
+
+.socila-links img {
+    padding: 5px;
+}
+
+.web-links {
+    padding: 20px;
+}
+
+.webLinks1stcol {
+    display: flex;
+    flex-direction: column;
+}
+
+.webLinks2endcol {
+    display: flex;
+    flex-direction: column;
+}
+
+.web-links a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    padding: 10px;
+}
+
+.footer-Request-invite {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 150px;
+    background-color: hsl(136, 64%, 51%);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-image: linear-gradient(hsl(136, 64%, 51%),hsl(192, 69%, 51%));
+}
+
+.Rights {
+    padding-bottom: 40px;
+    color: hsl(233, 8%, 62%);
+}
+
+@media screen and (min-width: 1220px) {
+    .footer-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .web-links {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .webLinks1stcol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .webLinks2endcol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .allRights {
+        padding-top: 30px;
+        margin-right: 0px;
+    }
+}
