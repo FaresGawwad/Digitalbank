@@ -139,7 +139,7 @@ body {
     margin: auto;
     display: flex;
     width: 150px;
-    background-color: hsl(136, 64%, 51%);
+    background-image: linear-gradient(hsl(136, 64%, 51%),hsl(192, 69%, 51%));
     color: white;
     border-radius: 30px;
     border: none;
